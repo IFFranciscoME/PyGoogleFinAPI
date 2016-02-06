@@ -35,8 +35,5 @@ def histprices(simbolo, periodo, ventana):
             except:
                 pass  #
     df = pd.DataFrame(datos_finales)
-    df.columns = ['TimeStamp', 'Open', 'High', 'Low', 'Close', 'Volume','Exchange']
+    df.columns = ['TimeStamp', 'Open', 'High', 'Low', 'Close', 'Volume', 'Exchange']
     return df
-
-Precios = histprices("AMXL", 3, 1) # Precios de ticker AMX.L cada 3 Minutos del Ultimo Dia
-print(Precios)
