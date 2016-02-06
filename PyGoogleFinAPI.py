@@ -9,8 +9,11 @@ import urllib2
 import datetime as dt
 
 
+# ------------------------------------------------ Obtener Precios Historicos OHLCV -- #
+
+
 def histprices(simbolo, periodo, ventana):
-    periodo = periodo*60
+    periodo = (periodo * 60)
     url_raiz = 'http://www.google.com/finance/getprices?i='
     url_raiz += str(periodo) + '&p=' + str(ventana)
     url_raiz += 'd&f=d,o,h,l,c,v&df=cpct&q=' + simbolo
@@ -29,11 +32,13 @@ def histprices(simbolo, periodo, ventana):
                 csiguiente = int(cdatos[0])
                 cts = int(ancla) + (csiguiente * periodo)
                 datos_finales.append((dt.datetime.fromtimestamp(float(cts)),
-                                    float(cdatos[1]), float(cdatos[2]),
-                                    float(cdatos[3]), float(cdatos[4]),
-                                    float(cdatos[5]), bolsa))
-            except:
-                pass  #
+                                      float(cdatos[1]),
+                                      float(cdatos[2]),
+                                      float(cdatos[3]),
+                                      float(cdatos[4]),
+                                      float(cdatos[5]),
+                                      bolsa))
+            except: pass
     df = pd.DataFrame(datos_finales)
     df.columns = ['TimeStamp', 'Open', 'High', 'Low', 'Close', 'Volume', 'Exchange']
     return df
