@@ -42,3 +42,12 @@ def histprices(simbolo, periodo, ventana):
     df = pd.DataFrame(datos_finales)
     df.columns = ['TimeStamp', 'Open', 'High', 'Low', 'Close', 'Volume', 'Exchange']
     return df
+
+Titulos = ("AC", "ALFAA", "ALSEA", "AMXL", "ASURB", "BIMBOA", "CEMEXCPO", "ELEKTRA",
+            "FEMSAUBD", "GAPAB", "GCARSOA1", "GENTERA", "GFINBURO", "GFNORTEO",
+            "GFREGIOO", "GMEXICOB", "GRUMAB", "ICA", "ICHB", "IENOVA", "KIMBERA",
+            "KOFL", "LABB", "LACOMERUBC", "LALAB", "LIVEPOLC1", "MEXCHEM", "NEMAKA",
+            "OHLMEX", "OMAB", "PE&OLES", "PINFRA", "SANMEXB", "SIMECB", "SITESL",
+            "TLEVISACPO", "WALMEXV")
+
+histprices(Titulos[4], 5, 1)
