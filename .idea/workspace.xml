@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21a83d67-c88e-4f9d-90d6-e1571f51db0d" name="Default" comment="Add Real Time Quotes">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyGoogleFinAPI.py" afterPath="$PROJECT_DIR$/PyGoogleFinAPI.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orcl.csv" afterPath="" />
     </list>
     <ignored path="PyGoogleFinAPI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -132,10 +131,6 @@
         <subPane subId="Project Files">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="PyGoogleFinAPI">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
